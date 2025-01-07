@@ -67,3 +67,11 @@ src/
 - azure-storage-blob
 - requests
 - python-dotenv
+
+## Cleanup
+```bash
+./deleteall.sh
+```
+This will:
+
+Delete all resource groups and all resources 
