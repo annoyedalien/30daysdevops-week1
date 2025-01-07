@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Weather Dashboard</h1>
+        <div class="row">
+            {% for data in weather_data %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ data['name'] }}</h5>
+                        <p class="card-text">Temperature: {{ data['main']['temp'] }}°F</p>
+                        <p class="card-text">Feels like: {{ data['main']['feels_like'] }}°F</p>
+                        <p class="card-text">Humidity: {{ data['main']['humidity'] }}%</p>
+                        <p class="card-text">Conditions: {{ data['weather'][0]['description'] }}</p>
+                        <p class="card-text"><small class="text-muted">Timestamp: {{ data['timestamp'] }}</small></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
