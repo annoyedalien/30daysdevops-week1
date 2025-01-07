@@ -13,7 +13,7 @@ This project fetches weather data from the OpenWeather API and saves it to Azure
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/annoyedalien/30daysdevops-week1.git
-   cd week1
+   cd 30daysdevops-week1
    ```
 2. Create a virtual environment:
 To create a virtual environment (venv) in Python, you don't need to install any additional packages if you're using Python 3.3 or later, as the venv module is included in the standard library. 
