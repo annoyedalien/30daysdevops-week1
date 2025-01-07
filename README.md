@@ -51,7 +51,7 @@ Fetch weather data for specified cities.
 Save the weather data to Azure Blob Storage.
 ## Project Structure
 ```
-week1/
+src/
 │
 ├── weather_dashboard/
 │   └── __init__.py
